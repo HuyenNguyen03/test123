@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phân Loại Hình Ảnh</title>
+    <link rel="stylesheet" href="style.css"> <!-- Nếu có stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h1>AI Phân Loại Hình Ảnh - FASHION-MNIST</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <input type="submit" value="Dự đoán">
+        </form>
+        <div class="image-grid">
+            <!-- Hiển thị hình ảnh và kết quả dự đoán -->
+            <div class="image-card">
+                <img src="images/sample1.png" alt="Sample Image 1">
+                <p class="label">Dự đoán: Áo thun</p>
+            </div>
+            <div class="image-card">
+                <img src="images/sample2.png" alt="Sample Image 2">
+                <p class="label">Dự đoán: Giày</p>
+            </div>
+            <div class="image-card">
+                <img src="images/sample3.png" alt="Sample Image 3">
+                <p class="label">Dự đoán: Túi xách</p>
+            </div>
+            <div class="image-card">
+                <img src="images/sample4.png" alt="Sample Image 4">
+                <p class="label">Dự đoán: Quần dài</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
